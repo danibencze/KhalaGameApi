@@ -1,0 +1,2 @@
+Check if game is over:
+    chekc if valid pit:

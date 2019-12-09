@@ -4,12 +4,16 @@ public class Runner {
     public static void main(String[] args){
         GameMaster gameStore = new GameMaster();
         System.out.println(gameStore.newGame(6));
-        System.out.println(gameStore.newGame(6));
+        String id = gameStore.newGame(6);
         System.out.println(gameStore.newGame(6));
         System.out.println(gameStore.getAllGames());
-        Game test = new Game(6);
-        System.out.println(test.getBoard());
-        //test.processTurn(1);
-        System.out.println(test.getBoard());
+        System.out.println(gameStore.getGame(id));
+        gameStore.getGame(id).processTurn(1);
+        gameStore.getGame(id).processTurn(8);
+        gameStore.getGame(id).processTurn(0);
+        gameStore.getGame(id).processTurn(9);
+        gameStore.getGame(id).processTurn(1);
+        gameStore.getGame(id).processTurn(9);
+        System.out.println(gameStore.getGame(id).getBoard());
     }
 }
