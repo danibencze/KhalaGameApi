@@ -3,7 +3,7 @@ Daniel Bencze @ 09/12/2019
 
 This Projects implements the Khala game as an API.
 
-####Dependencies:
+#### Dependencies:
 - Maven
 - Java
 - The rest will be managed by Maven
